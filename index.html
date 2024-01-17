@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <section class="hero">
+
+        <h1 class="tittle">Password Generator</h1>
+        <p class="subtittle">Use our online generator to create a strong and secure password</p>
+
+        </section>
+
+        <section class="box">
+            <div class="password">
+                <div class="text">
+                    <input type="text" name="password" id="password">
+                </div>
+
+                <div class="actions">
+                    <button id="copy-2">
+                        <img src="./assets/copy.svg">
+                    </button>
+                    <button id="refresh">
+                        <img src="./assets/refresh.svg">
+                    </button>
+                </div>
+            </div>
+            <div class="security-indicator">
+                <div id="security-indicator-bar" class="bar" style="width: 90%;"></div>
+            </div>
+        </section>
+
+        <section class="box">
+            
+        </section>
+
+        
+        <input 
+        type="range" 
+        name="password-length" 
+        id="password-length"
+        value="16"
+        min="4"
+        max="64"
+        >
+
+        <button id="copy-1">Copy password</button>
+
+        <span>Developed by: @euvincii</span>
+    </main>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>

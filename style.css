@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 2em;
+    font-family: 'Miriam Libre', sans-serif;
+    background-color: #F8FAFD;
+    color: #252525
+}
+
+main{
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.hero{
+    text-align: center;
+    padding-bottom: 3rem;
+
+}
+
+.hero .tittle{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 3.5rem;
+}
+
+.hero .subtittle{
+    font-size: 1.25rem;
+    color: #828282;
+}
+
+.box{
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(132, 148, 165, 0.1);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+
+.password{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.password .text{
+    flex: 1;
+}
+
+.password .text input{
+    font-family: "Inconsolata", serif;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    cursor: default;
+    height: 52px;
+    width: 100%;
+    transition: all 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.password .action button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+
+}
+
+.security-indicator {
+    height: 10px;
+    background-color: #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .security-indicator .bar {
+    height: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  
+    transition: all 0.2s;
+  }
+  .security-indicator .bar.completed {
+    border-top-right-radius: 0;
+  }
+  .security-indicator .bar.critical {
+    background-color: #eb5757;
+  }
+  .security-indicator .bar.warning {
+    background-color: #f2c94c;
+  }
+  .security-indicator .bar.safe {
+    background-color: #27ae60;
+  }
