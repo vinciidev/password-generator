@@ -54,6 +54,7 @@ passwordLenghtEl.addEventListener("input", function() {
 
     document.querySelector("#copy-2").addEventListener("click", copy)
     document.querySelector("#copy-1").addEventListener("click", copy)
+    document.querySelector("#refresh").addEventListener("click", generatePassword)
 
     generatePassword()
 

@@ -69,33 +69,6 @@ main{
 
 }
 
-.security-indicator {
-    height: 10px;
-    background-color: #ddd;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-  .security-indicator .bar {
-    height: 10px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  
-    transition: all 0.2s;
-  }
-  .security-indicator .bar.completed {
-    border-top-right-radius: 0;
-  }
-  .security-indicator .bar.critical {
-    background-color: #eb5757;
-  }
-  .security-indicator .bar.warning {
-    background-color: #f2c94c;
-  }
-  .security-indicator .bar.safe {
-    background-color: #27ae60;
-  }
-
   .customize {
     padding: 1rem 1.5rem;
   }
@@ -224,4 +197,38 @@ main{
 
 .submit button:hover {
   background-color: #5271AF;
+}
+
+.devby {
+  display: flex;
+  position: relative;
+  left: 19rem;
+  top: 10rem;
+
+}
+
+@media only screen and(max-width: 480px) {
+  .password {
+    padding: 1rem;
+  }
+}
+
+.password .text .input {
+  font-size: 1.5rem;
+}
+
+.password .text .input.font-sm {
+  font-size: 1.2rem;
+}
+
+.password .text .input.font-xs {
+  font-size: 1rem;
+}
+
+.password .text .input.font-xxs {
+  font-size: 1rem;
+}
+
+.password .actions img {
+  width: 24px;
 }
